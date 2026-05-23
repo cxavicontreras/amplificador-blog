@@ -6,6 +6,7 @@ import Gallery from "../components/Gallery";
 import esquema from "../assets/images/esquematico.png";
 import protoboard from "../assets/images/hero.png";
 import semaforo from "../assets/images/semaforo.png"
+import lm386 from "../assets/images/lm386.png";
 
 export default function Home() {
   return (
@@ -173,24 +174,94 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ESQUEMÁTICO */}
-      <section className="bg-slate-900 py-24">
+      {/* ESQUEMÁTICOS */}
+<section
+  id="esquematico"
+  className="bg-slate-900 py-24"
+>
 
-        <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6">
 
-          <SectionTitle
-            title="Esquemático"
-            subtitle="Diseño completo del circuito"
-          />
+    <SectionTitle
+      title="Esquemáticos del Sistema"
+      subtitle="Diseño modular del amplificador y semáforo indicador"
+    />
 
-          <img
-            src={esquema}
-            className="rounded-3xl mt-12 shadow-2xl"
-          />
+    <div className="grid lg:grid-cols-2 gap-12 mt-16">
+
+      {/* LM386 */}
+
+      <div
+        className="
+          bg-slate-950
+          border
+          border-slate-800
+          rounded-3xl
+          overflow-hidden
+          hover:border-cyan-500/40
+          transition
+        "
+      >
+
+        <img src={lm386} />
+
+        <div className="p-8">
+
+          <h3 className="text-2xl font-bold text-cyan-400">
+            Amplificador LM386
+          </h3>
+
+          <p className="mt-4 text-slate-300 leading-relaxed">
+
+            Circuito principal encargado de amplificar
+            la señal de audio utilizando el integrado
+            LM386 y un parlante de 8Ω.
+
+          </p>
 
         </div>
 
-      </section>
+      </div>
+
+      {/* SEMÁFORO */}
+
+      <div
+        className="
+          bg-slate-950
+          border
+          border-slate-800
+          rounded-3xl
+          overflow-hidden
+          hover:border-cyan-500/40
+          transition
+        "
+      >
+
+        <img src={semaforo} />
+
+        <div className="p-8">
+
+          <h3 className="text-2xl font-bold text-cyan-400">
+            Semáforo Indicador
+          </h3>
+
+          <p className="mt-4 text-slate-300 leading-relaxed">
+
+            Sistema de monitoreo visual basado en
+            transistores BC547 y LEDs indicadores
+            de nivel de señal.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>      
 
       {/* COMPONENTES */}
       <section id="componentes" className="max-w-7xl mx-auto px-6 py-24">
