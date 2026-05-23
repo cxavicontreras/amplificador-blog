@@ -2,11 +2,11 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import Gallery from "../components/Gallery";
-
 import esquema from "../assets/images/esquematico.png";
 import protoboard from "../assets/images/hero.png";
 import semaforo from "../assets/images/semaforo.png"
 import lm386 from "../assets/images/lm386.png";
+import pdf from "../assets/docs/amplificador.pdf";
 
 export default function Home() {
   return (
@@ -315,6 +315,36 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* DOCUMENTACIÓN PDF */}
+<section className="bg-slate-950 py-24">
+
+  <div className="max-w-7xl mx-auto px-6">
+
+    <SectionTitle
+      title="Documentación del Proyecto"
+      subtitle="Informe técnico completo del amplificador LM386"
+    />
+
+    <div className="mt-12">
+
+      <iframe
+        src={pdf}
+        className="
+          w-full
+          h-[800px]
+          rounded-3xl
+          border
+          border-slate-800
+          shadow-2xl
+        "
+      />
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* VENTAJAS */}
       <section className="max-w-7xl mx-auto px-6 py-24">
