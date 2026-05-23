@@ -27,11 +27,26 @@ export default function Hero() {
 
           </p>
 
-          <button className="mt-8 bg-cyan-500 hover:bg-cyan-400 transition px-6 py-3 rounded-2xl font-bold">
+          <a
+  href="#esquematico"
+  className="
+    inline-block
+    mt-8
+    bg-cyan-500
+    hover:bg-cyan-400
+    transition
+    px-6
+    py-3
+    rounded-2xl
+    font-bold
+    shadow-lg
+    shadow-cyan-500/20
+  "
+>
 
-            Ver Proyecto
+  Ver Proyecto
 
-          </button>
+</a>
 
         </div>
 

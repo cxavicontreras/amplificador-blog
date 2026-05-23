@@ -65,7 +65,10 @@ export default function Home() {
       </section>
 
       {/* OBJETIVOS */}
-      <section className="bg-slate-900 py-24">
+      <section
+  id="esquematico"
+  className="bg-slate-900 py-24"
+>
         <div className="max-w-7xl mx-auto px-6">
 
           <SectionTitle
